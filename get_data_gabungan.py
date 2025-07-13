@@ -3,7 +3,7 @@ import pandas as pd
 import time
 from tqdm import tqdm
 
-API_KEY = '69fd82b415ed587459dd4144574c2bf8'
+API_KEY = 'xxxxxxxxxxxxxxxxxxx'
 
 
 base_url = 'https://api.themoviedb.org/3'
@@ -70,11 +70,11 @@ def get_japanese_anime(pages):
     return anime_data_list
 
 
-# 125 halaman film (2500 film)
+# 125 halaman film (2500 film kalau full)
 movies = get_popular_movies(125)
 all_data.extend(movies)
 
-# 125 halaman (2500 anime)
+# 125 halaman (2500 anime kalau full)
 anime = get_japanese_anime(125)
 all_data.extend(anime)
 
